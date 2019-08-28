@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EJS INDEX VIEW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/Style.css" />
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+
+
+<body style=" 
+display:flex; 
+flex-direction:column;
+justify-content:center;
+align-items: center;
+">
+
+<% include partials/Nav.ejs  %>
+
+    <h1 style="color: darkgoldenrod">WELCOME TO WORLD OF NODE JS WITH EJS.....</h1>
+    <br />
+    <h2>You Have Successfully Contacted To :
+        <%= Data.name %>
+    </h2>
+
+    <br />
+    <h5>OUTPUT FROM AN OBJECT OF DATA</h5>
+    <br />
+    <table border=2 style="
+padding: 10px;
+">
+        <thead>
+            <tr>
+                <th style="
+        padding: 5px;
+        color:goldenrod;
+              ">Id</th>
+                <th style="color:goldenrod;">Name</th>
+                <th style="color:goldenrod;">Age</th>
+                <th style="color:goldenrod;">Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="
+            padding: 5px;
+            color:blue;
+              ">
+                    <%= Data.Id %>
+                </td>
+                <td style="color:blue">
+                    <%= Data.name %>
+                </td>
+                <td style="color:blue">
+                    <%= Data.age %>
+                </td>
+                <td style="color:blue">
+                    <%= Data.color %>
+                </td>
+            </tr>
+        </tbody>
+        <!-- <br/>
+    <tfoot>
+        <tr>
+           <td>&copy;@018 all rights reserved.</td> 
+        </tr>
+    </tfoot> -->
+    </table>
+
+    <br />
+    <br />
+    <h5>OUTPUT FROM AN ARRAY OF DATA</h5>
+    <br />
+    <h5 style="border-bottom: 2px solid red;">Hobbies</h5>
+    <ul>
+        <br />
+        <% Data.hobbies.forEach((hobby)=>{  %>
+
+        <li>
+            <%=hobby%>
+        </li>
+
+        <% });  %>
+    </ul>
+
+    <footer>
+
+    </footer>
+    <!-- <script src="main.js"></script> -->
+
+</body>
+
+</html>

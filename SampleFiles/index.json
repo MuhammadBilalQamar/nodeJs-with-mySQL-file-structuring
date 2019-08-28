@@ -1,0 +1,37 @@
+{
+    "QUESTIONS": {
+        "HTML": {
+            "Q1": "what is the full form of Html ?",
+            "Q2": "Who Is the inventor of Html ?",
+            "Q3": "which Tag is used in creating links?"
+        },
+        "CSS": {
+            "Q1": "what is the full form of CSS ?",
+            "Q2": "Who Is the inventor of CSS ?",
+            "Q3": "what is a cubic bezier in CSS?"
+        },
+        "JAVASCRIPT": {
+            "Q1": "what is the full form of Javascript ?",
+            "Q2": "Who Is the inventor of Javascript ?",
+            "Q3": "Are both Switchcase and If/Else Similar?"
+        }
+    },
+
+        "ANSWERS": {
+            "HTML": {
+                "Q1": "B",
+                "Q2": "C",
+                "Q3": "A"
+            },
+            "CSS": {
+                "Q1": "A",
+                "Q2": "B",
+                "Q3": "B"
+            },
+            "JAVASCRIPT": {
+                "Q1": "C",
+                "Q2": "B",
+                "Q3": "A"
+            }
+        }
+    }

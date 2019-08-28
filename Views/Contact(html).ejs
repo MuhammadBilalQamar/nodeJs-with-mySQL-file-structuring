@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EJS CONTACT VIEW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/Style.css" />
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+
+
+<body style="background: rgba(128,128,128,0.1); 
+display:flex; 
+flex-direction:column;
+justify-content:center;
+align-items: center;
+">
+
+<% include partials/Nav.ejs  %>
+
+    <h1 style="color: darkgoldenrod">WELCOME TO Contact Page</h1>
+
+
+    <form method="POST" action="/Success">
+        <label for="Who">Name:</label><input type="text" name="UserName" />
+        <label for="Dept">Department</label><input type="text" name="UserDepartment"/>
+        <label for="mail">Email</label><input type="email" name="UserEmail"/>
+        <button>Submit</button>
+    </form>
+   
+</body>
+
+</html>
